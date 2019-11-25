@@ -19,6 +19,10 @@ int main()
 	{
 		printf("welcome!\n");
 	}
+	if (!d)
+	{
+		printf("welcome to !\n");
+	}
 	return 0;
 }
 
