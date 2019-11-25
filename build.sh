@@ -6,3 +6,4 @@ gcc point.c -o point.o
 gcc enum.c -o enum.o
 gcc if.c -o if.o
 gcc struct_function.c -o struct_function.o
+gcc struct_function_point.c -o struct_function_point.o

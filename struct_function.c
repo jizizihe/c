@@ -35,8 +35,11 @@ struct str_func test = {
 };
 
 int main(){
+	/** struct function point **/
+	struct str_func *my= &test;
+	/** struct function **/
 	if (test.compare)
-		printf("a b max = %d\n",(test.compare(test.a,test.b)));
+		printf("a b max = %d\n",(my->compare(test.a,test.b)));
 	if (test.compare)
 		printf("a add b = %d\n",(test.add(test.a,test.b)));
 	if (test.compare)
