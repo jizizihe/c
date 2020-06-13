@@ -6,4 +6,5 @@
 #gcc char_point_5.c -o char_point_5.o
 #gcc null_point_6.c -o null_point_6.o
 #gcc function_point_7.c -o function_point_7.o
-gcc struct_point_8.c -o struct_point_8.o
+#gcc struct_point_8.c -o struct_point_8.o
+gcc return_point.c -o return_point.o
