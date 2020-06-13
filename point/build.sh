@@ -3,5 +3,5 @@
 #gcc point_arguments_2.c -o point_arguments_2.o
 #gcc second_pointer_3.c -o second_pointer_3.o
 #gcc array_and_point_4.c -o array_and_point_4.o
-#gcc null_point.c -o null_point.o
-gcc char_point.c -o char_point.o
+gcc char_point_5.c -o char_point_5.o
+gcc null_point_6.c -o null_point_6.o
