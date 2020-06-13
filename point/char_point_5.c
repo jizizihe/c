@@ -7,7 +7,7 @@ void my_strcpy(char *s, char *t)
 
 int main()
 {	
-	char *p = "now is the time";//定义一个指针
+	char *p = "now is the time";//定义一个指针，字符串也是数组，所以这里是p为字符数组，*p='n'
 	char *p2;
 
 	char src[40] = "today is nice day";//定义一个数组
@@ -19,6 +19,7 @@ int main()
 	printf("dest value:= %s\n", dest);	
 
 	printf("指针：\n");	
+	printf("打印字符 *p:= %c\n", *p); //打印字符*p, 指向开头的n, 通过地址p++，来访问后面的内容。
 	printf("打印字符串 p:= %s\n", p); //打印字符串p。
 	printf("打印字符串 p2:= ");
 	while (*p != '\0'){
