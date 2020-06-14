@@ -5,7 +5,7 @@
 struct str_func{
 	int a;
 	int b;
-	int (*add)(int a, int b);
+	int (*add)(int a, int b);//函数指针成员
 	int (*sub)(int a, int b);
 	int (*compare)(int a, int b);
 };
@@ -38,8 +38,9 @@ int main(){
 	/** struct function point **/
 	struct str_func *my= &test;
 	/** struct function **/
+	printf("a = %d, b = %d\n", my->a, my->b);
 	if (test.compare)
-		printf("a b max = %d\n",(my->compare(test.a,test.b)));
+		printf("ab max = %d\n",(my->compare(test.a,test.b)));
 	if (test.compare)
 		printf("a add b = %d\n",(test.add(test.a,test.b)));
 	if (test.compare)
