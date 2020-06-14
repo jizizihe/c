@@ -15,7 +15,7 @@ int main( )
 	union Data data;        
 
 	//测试内存区域
-	printf("%d, %d\n", sizeof(data), sizeof(union Data) );
+	printf("%d, %d\n", sizeof(data), sizeof(union Data) );//数据空间由占用内存最大的成员决定
 	data.i = 10;
     data.f = 220.5;
     strcpy( data.str, "C Programming");
