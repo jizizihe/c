@@ -14,6 +14,7 @@ struct message2 {
 };
 
 int main(){
+	int value;
 	message mess = {"jzzh",16,100};//初始化数组，通过typedef别名后不用写struct了。
 	message *p = &mess;
 	struct message2 *p2;//不加struct会报错。
@@ -26,7 +27,8 @@ int main(){
 	p2 = (struct message2 *)malloc(sizeof(struct message2));//需要头文件：#include<stdlib.h>
 	//p2->name2 = "test";//不能直接赋值，因为数组名是一个指针，指向数组首元素的地址，这样赋值就是修改地址。
 	strcpy(p2->name2, "test");//需要头文件：#include<string.h> 
-	p2->age2 = 18;
+	p2->age2 = value;
+	value = 18;
 	printf("message2 name:= %s\n",p2->name2);
 	printf("message2 age:= %d\n",p2->age2);
 
